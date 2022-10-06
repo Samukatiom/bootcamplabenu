@@ -1,0 +1,40 @@
+### Endpoint de teste
+GET http://localhost:3003/ping
+
+### Signup
+POST http://localhost:3003/users/signup
+Content-Type: application/json
+
+{
+    "nickname": "Samukatiom",
+    "email": "saraujo@teste.com",
+    "password": "123teste"
+}
+
+# "token": eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIxNjIxYjZhLTNkYjYtNGI0MS1hN2IxLWFhOWNhMzY0M2U5NyIsImlhdCI6MTY1OTQwMjQ5NCwiZXhwIjoxNjU5NDg4ODk0fQ.2b2JP4sQxnqjyexfQZxAhhKzqk1JZB4WNyiWj2yjXaU
+
+### Login
+POST http://localhost:3003/users/login
+Content-Type: application/json
+
+{
+    "email": "saraujo@teste.com",
+    "password": "123teste"
+}
+
+### Get all Users
+GET http://localhost:3003/users
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIxNjIxYjZhLTNkYjYtNGI0MS1hN2IxLWFhOWNhMzY0M2U5NyIsImlhdCI6MTY1OTQwMjQ5NCwiZXhwIjoxNjU5NDg4ODk0fQ.2b2JP4sQxnqjyexfQZxAhhKzqk1JZB4WNyiWj2yjXaU
+
+### Edit data user
+PUT http://localhost:3003/users/21621b6a-3db6-4b41-a7b1-aa9ca3643e97
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIxNjIxYjZhLTNkYjYtNGI0MS1hN2IxLWFhOWNhMzY0M2U5NyIsImlhdCI6MTY1OTQwMjQ5NCwiZXhwIjoxNjU5NDg4ODk0fQ.2b2JP4sQxnqjyexfQZxAhhKzqk1JZB4WNyiWj2yjXaU
+Content-Type: application/json
+
+{
+    "nickname" : "Samucones",
+    "email": "samuekatiom@gmail.com"
+}
+### Delete user
+DELETE http://localhost:3003/users/7079b8e4-95cd-48aa-82a9-77454e94b789
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIxNjIxYjZhLTNkYjYtNGI0MS1hN2IxLWFhOWNhMzY0M2U5NyIsImlhdCI6MTY1OTQwMjQ5NCwiZXhwIjoxNjU5NDg4ODk0fQ.2b2JP4sQxnqjyexfQZxAhhKzqk1JZB4WNyiWj2yjXaU

@@ -1,0 +1,216 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+    /* header */
+body {
+    font-family: Arial;
+    background-color: rgb(116, 116, 116);
+}
+.foto-eu {
+    width: 80px;
+    border-radius:  200px;
+    position: relative;
+    top: 30px;
+    left: 10px;
+}
+header {
+    background-color: lightblue;
+    color: white;
+    font-weight: bolder;
+    display: block;
+}
+
+header nav {
+    display: inline;
+    font-size: 20px;
+    position: relative;
+    left: 400px;
+    bottom: 60px;
+
+}
+header a {
+    text-decoration: none;
+    color: white;
+}
+header p {
+    position: relative;
+    bottom: 16px;
+    left: 110px;
+    
+    
+}
+header button {
+    width: 120px;
+    padding: 10px;
+    background-color: rgb(116, 116, 116);
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+}
+header button:hover {
+    opacity: 80%;   
+}
+header button:active {
+    background-color: lightblue;
+}
+/* Quem sou eu */
+#sobre-mim {
+    margin: 20px 30px;
+    background-color:lightblue;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+h2 {
+    position: relative;
+    left: 20px;
+    margin-bottom: 4px;
+    color: white;
+}
+h3 {
+    position: relative;
+    top: 5px;
+    left: 30px;
+}
+
+#sobre-mim p {
+    position: relative;
+    margin: 0px 20px;
+    font-size: 20px;
+}
+
+#carreira {
+    margin: 20px 30px;
+    background-color:lightblue;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+
+img{
+    width: 150px;
+    border-radius: 200px;
+    margin: 0px 10px;
+    margin-top: 10px; 
+}
+table {
+    position: relative;
+    left: 55px;
+    text-align: center;
+    width: 1000px;
+    top: 5px;
+}
+.ens {
+    padding: 20px;
+    border: 2px solid black;
+    margin: 10px;
+}
+.pro {
+    padding: 20px;
+    border: 2px solid black;
+    margin: 10px;
+}
+td {
+    font-weight: bolder;
+}
+#projetos {
+    margin: 20px 30px;
+    background-color:lightblue;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.efeito :hover {
+    opacity: 70%;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+#habilidades{
+     margin: 20px 30px;
+    background-color:lightblue;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+.ss{
+    position: relative;
+    top: 10px;
+    left: 40px;
+}
+.hs {
+    position: relative;
+    bottom: 82px;
+    left: 350px;
+}
+#contato{
+    margin: 20px 30px;
+    background-color:lightblue;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+form{
+    margin: 20px 40px;
+}
+#nome-form{
+    margin: 4px 20px;
+    border-radius: 5px;
+    border: none;
+}
+#email-form{
+    margin: 4px 90px;
+    border-radius: 5px;
+    border: none;
+}
+#mensagem{
+    margin: 4px 55px;
+    width: 500px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+}
+#la-msg {
+    position: relative;
+    bottom: 30px;
+}
+#nome-form:hover{
+    opacity: 70%;
+    transition: all 0.5s;
+    cursor:auto;
+}
+#email-form:hover{
+    opacity: 70%;
+    transition: all 0.5s;
+    cursor:auto;
+}
+#mensagem:hover{
+    opacity: 70%;
+    transition: all 0.5s;
+    cursor:auto;
+}
+footer img {
+    width: 70px;
+    position: relative;
+    left: 1050px;
+    
+}
+footer{
+background-color: lightblue;
+color: white;
+font-weight: bolder;
+display: block;
+}
+footer h2 {
+    position: relative;
+    top: 10px;
+}
+footer img:hover {
+    opacity: 70%;
+    transition: all 0.5s;
+    cursor:auto;
+}

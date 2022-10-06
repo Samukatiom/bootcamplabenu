@@ -1,0 +1,17 @@
+
+.smallard-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    padding: 20px 0px;
+    margin-bottom: 10px;
+    height: 90px;
+}
+.smallard-container img {
+    width: 3vw;
+    margin: 10px;
+}
+.negrito {
+    font-weight: bolder;
+    margin: 2px;
+}

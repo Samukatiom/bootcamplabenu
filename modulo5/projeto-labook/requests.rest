@@ -1,0 +1,46 @@
+### Endpoint de teste
+GET http://localhost:3003/ping
+
+### 1) Signup
+POST http://localhost:3003/users/signup
+Content-Type: application/json
+
+{
+    "name": "Samuel",
+    "email": "samuel@gmail.com",
+    "password": "sam123"
+}
+
+### 2) Login
+POST http://localhost:3003/users/login
+Content-Type: application/json
+
+{
+    "email": "samuel@gmail.com",
+    "password": "sam123"
+}
+
+### 3) Create Post
+POST http://localhost:3003/posts/create
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImY3MzczZWEwLTk3NGMtNDhhYy1iMDMwLTUwY2M5MThjMTY2MiIsInJvbGUiOiJOT1JNQUwiLCJpYXQiOjE2NjAyNTI3MzcsImV4cCI6MTY2MDMzOTEzN30.QoWXVhEAF6nkRasMEdnQW2SOihGktNxjcSqsvhtUwTM
+Content-Type: application/json
+
+{
+    "content": "Boa noite meus amigos"
+}
+
+### 3) Get all Posts
+GET http://localhost:3003/posts
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImY3MzczZWEwLTk3NGMtNDhhYy1iMDMwLTUwY2M5MThjMTY2MiIsInJvbGUiOiJOT1JNQUwiLCJpYXQiOjE2NjA1NjM5NjYsImV4cCI6MTY2MDY1MDM2Nn0.8lipptBWLjGeweyrwvAKJtOpUtDfe_BjGpb2ktTAdtM
+
+### 3) Delete Post
+DELETE http://localhost:3003/posts/6f4f9d7c-a43c-46b0-8ca8-3bc841644129
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImY3MzczZWEwLTk3NGMtNDhhYy1iMDMwLTUwY2M5MThjMTY2MiIsInJvbGUiOiJOT1JNQUwiLCJpYXQiOjE2NjAzMjA2MzEsImV4cCI6MTY2MDQwNzAzMX0.EMiWnXHfU8r7wyD_tazyBY6moK9-D79_IaAvG09zbP4
+
+### 3) Create like
+POST http://localhost:3003/posts/like/203
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImY3MzczZWEwLTk3NGMtNDhhYy1iMDMwLTUwY2M5MThjMTY2MiIsInJvbGUiOiJOT1JNQUwiLCJpYXQiOjE2NjA3MDUxNDMsImV4cCI6MTY2MDc5MTU0M30.Ijpcyh83y2HQoorFKSz6tH91AFjKKeUUO-TsncjmVCA
+
+### 3) Remove like
+DELETE http://localhost:3003/posts/like/302
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImY3MzczZWEwLTk3NGMtNDhhYy1iMDMwLTUwY2M5MThjMTY2MiIsInJvbGUiOiJOT1JNQUwiLCJpYXQiOjE2NjA3MDUxNDMsImV4cCI6MTY2MDc5MTU0M30.Ijpcyh83y2HQoorFKSz6tH91AFjKKeUUO-TsncjmVCA

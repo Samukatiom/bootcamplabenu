@@ -1,0 +1,17 @@
+.img-music{
+    width: 2vw;
+    margin-right: 4px;
+}
+.list-playlist {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20vw;
+    border: 2px solid green;
+    margin: 5px;
+    padding: 5px;
+}
+.list-playlist div {
+    display: flex;
+    align-items: center;
+}

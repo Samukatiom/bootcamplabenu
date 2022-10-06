@@ -1,0 +1,39 @@
+### Ping - Endpoint for test
+GET https://labecommerce-samukatiom.herokuapp.com/ping
+
+### User registration - Endpoint for user registration
+POST https://labecommerce-samukatiom.herokuapp.com/users
+Content-Type: application/json
+
+{
+    "email": "mcdonalts@gmail.com",
+    "password": "burguerKing"
+}
+
+### Get all users
+GET https://labecommerce-samukatiom.herokuapp.com/users?order=desc&sort=email
+
+### Product registration - Endpoint for product registration
+POST https://labecommerce-samukatiom.herokuapp.com/products
+Content-Type: application/json
+
+{
+    "name": "Sorvete de Creme",
+    "price": 20.90
+}
+
+### Get all products
+GET https://labecommerce-samukatiom.herokuapp.com/products?order=desc&sort=name
+
+### Register purchases
+POST https://labecommerce-samukatiom.herokuapp.com/purchases
+Content-Type: application/json
+
+{
+    "user_id": "1",
+    "product_id": "3",
+    "quantity": 10
+}
+
+### Get purchase by user
+GET https://labecommerce-samukatiom.herokuapp.com/users/1/purchase?order=asc&sort=name

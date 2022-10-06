@@ -1,0 +1,32 @@
+### Endpoint de teste 
+GET http://localhost:3003/ping
+
+### 1) Signup
+POST http://localhost:3003/users/signup
+Content-Type: application/json
+
+{ "name": "alice", "email": "alice@gmail.com", "password": "alice99" }
+
+### 2) Login
+POST http://localhost:3003/users/login
+Content-Type: application/json
+
+{ "email": "astrodev@gmail.com", "password": "bananinha" }
+
+### 3) Create Show
+POST http://localhost:3003/shows
+Authorization:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEwMSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY2MTEwNzY4MSwiZXhwIjoxNjYxMTk0MDgxfQ.a8Hdvbu4l2wZyYTZzYoX4_ZlPmczJhvVPMph5zkvUDA
+Content-Type: application/json
+
+{ "band": "Show do Samuca", "startsAt": "2022/12/12"}
+
+### 3) Get Shows
+GET http://localhost:3003/shows
+
+### 3) Reservation Ticket
+POST http://localhost:3003/shows/reservation/201
+Authorization:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEwMSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY2MDk0MTU3NCwiZXhwIjoxNjYxMDI3OTc0fQ.CsoaTIjfmTzMsCjfAak2UZE2t7a1SINgi0qRfTeptNM
+
+### 3) Delete Ticket
+DELETE http://localhost:3003/shows/reservation/201
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImMzMDViOWYzLWE2YmUtNGRhZi04ZmMyLWY2Nzg5ZDYwNjFhMyIsInJvbGUiOiJOT1JNQUwiLCJpYXQiOjE2NjExMzU5NjUsImV4cCI6MTY2MTIyMjM2NX0.Nv2l8YNx8_z8AFZAt_7GQiCgWt4I6pvKGmvU91F006I

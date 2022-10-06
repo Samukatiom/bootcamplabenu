@@ -1,0 +1,47 @@
+### Ping
+GET http://localhost:3003/ping
+
+### Create Classroom
+POST http://localhost:3003/classrooms
+Content-Type: application/json
+
+{
+    "name": "Teste2",
+    "module": 1
+}
+
+### Get Classrooms actives
+GET http://localhost:3003/classrooms/actives
+
+### Create Student
+POST http://localhost:3003/students
+Content-Type: application/json
+
+{
+    "name": "Samuel Araujo",
+    "email": "saraujor@teste.com",
+    "birthdate": "1999/02/03",
+    "classroomId": "2"
+}
+
+### Edit module Classroom
+PUT http://localhost:3003/classrooms/2
+Content-Type: application/json
+
+{
+    "module": 5
+}
+
+### Search students by name
+GET http://localhost:3003/students/aragon
+
+### Edit a student's classroom
+PUT http://localhost:3003/students/1659141435417
+Content-Type: application/json
+
+{
+    "classroomId": "1"
+}
+
+### Get Student by classroom
+GET http://localhost:3003/students/classrooms/1

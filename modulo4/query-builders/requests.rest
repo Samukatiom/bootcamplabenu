@@ -1,0 +1,30 @@
+### Ping
+GET http://localhost:3003/ping
+
+### Create perfume
+POST http://localhost:3003/perfumes
+Content-Type: application/json
+
+{
+    "name": "Coffee",
+    "brand": "Egeo",
+    "price": 164.90,
+    "ml": 100
+}
+
+### Get all perfumes
+GET http://localhost:3003/perfumes?&sort=name&limit=5&page=1
+
+### Get perfumes by name, brand or id
+GET http://localhost:3003/perfumes?q=12300099999313123
+
+### Edit perfume price
+PUT http://localhost:3003/perfumes/3
+Content-Type: application/json
+
+{
+    "price": 400.90
+}
+
+### Delete perfume
+DELETE http://localhost:3003/perfumes/01

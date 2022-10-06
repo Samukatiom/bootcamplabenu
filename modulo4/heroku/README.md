@@ -1,0 +1,1 @@
+LINK HEROKU = https://primeiro-app-heroku-samukariom.herokuapp.com/ping

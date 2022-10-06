@@ -1,0 +1,10 @@
+1-Homem-Aranha 1
+2-Homem-Aranha 2
+3-Homem-Aranha 3
+4-O Espetacular Homem-Aranha
+5-O Espetacular Homem-Aranha 2
+6-Homem-Aranha: De Volta Ao Lar
+7-Homem-Aranha: Longe de Casa
+8-Homem-Aranha: Sem Volta para Casa
+9-Homem-Formiga
+10-Alice no País das Maravilhas

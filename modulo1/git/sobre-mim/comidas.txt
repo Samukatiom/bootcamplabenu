@@ -1,0 +1,10 @@
+1-Pizza
+2-Hamburguer Artesanal
+3-Chocolate
+4-Frango a milanesa
+5-Banana a milanesa
+6-Strogonoff
+7-Churrasco
+8-Lasanha 4 queijos
+9- Macarrão Carbonara
+10- Nhoque de batata salsa

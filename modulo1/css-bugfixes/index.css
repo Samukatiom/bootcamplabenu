@@ -1,0 +1,171 @@
+/** 
+  *
+  *  ESTILOS GERAIS 
+  *
+  **/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Roboto;
+}
+h2 {
+    background-color: #fe7e02;
+    padding: 10px 5px 10px 5px;
+    color: white;
+    text-align: center;
+}
+
+input {
+    height: 20px;
+    width: 500px;
+}
+
+button:focus {
+    color: white;
+}
+
+td img {
+    width: 35px;
+}
+
+div>p:first-child {
+    display: inline;
+}
+
+
+.botao-amarelo {
+    background-color: #ffaf43;
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    display: block;
+    margin: auto;
+    margin-top: 200px;
+}
+
+.botao-amarelo:hover {
+    background-color: white;
+    color:#ffaf43 ;
+}
+
+.container {
+    height: 500px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.icone {
+    height: 20px;
+}
+.icone:hover {
+    opacity: 0.5;
+}
+.icone:active {
+    opacity: 1;
+}
+
+
+button:hover {
+    background-color: #fe7e02;
+    color: white;
+}
+/** 
+  *
+  *  ESTILOS HOME 
+  *
+  **/
+#container-para-comprar > p {
+    position: relative;
+    top: 100px;
+}
+#container-de-descricao {
+    background-color: #2274a5;
+    color: white;
+    
+}
+
+#container-de-descricao > ol {
+    padding: 1vw 41vw;
+    margin-top: 100px;
+}
+
+#container-para-comprar {
+    background-color: #e7eb90;
+}
+
+#container-para-comprar>p {
+    color: #c44f00;
+    padding: 100px 0;
+    font-size: 60px;
+    
+}
+#paragrafo-container {
+    position: relative;
+    top: 100px;
+}
+#titulo-container {
+    position: relative;
+    top: 5px;
+}
+
+
+/**
+  *
+  *  ESTILOS COMPRAR 
+  *
+  **/
+input {
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+div:nth-child(2),
+div:last-child {
+    text-align: center;
+}
+
+table {
+    width: 60%;
+    margin: auto;
+}
+tr {
+    text-align: center;
+}
+
+td button {
+    background-color: #fadf63;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    color: black;
+    border: 0px;
+}
+
+.container-do-search {
+    margin-top: 20px;
+    height: 100px;
+}
+
+
+#back-button {
+    background-color: white;
+    width: 100px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 10px;
+    color: black;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+#back-button:hover {
+    background-color: #ffaf43;
+
+}

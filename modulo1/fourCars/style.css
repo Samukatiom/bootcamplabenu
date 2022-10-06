@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+/*Distribuição do body*/
+body {
+    display: flex;
+    flex-direction: column;
+}
+/*Header*/
+header {
+    margin-top: auto;
+    margin: 2px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 25px;
+    box-shadow: 3px 3px 5px grey;
+}
+.logo-4cars {
+    width: 10vw;
+}
+.botoes-nav a {
+    text-decoration: none;
+}
+.botoes-nav button {
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: #FF5C5C;
+    background-color: white;
+    border-radius: 8px;
+    width: 20vw;
+    height: 5vh;
+    border: none;
+    box-shadow: 1px 1px 5px #FF5C5C;
+    margin: 0px 5px;
+}
+.botoes-nav button:hover {
+    box-shadow: 1px 1px 5px black;
+    color: black;
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+/*Conteúdo*/
+main {
+    background-color:white;
+    margin: 10px 0px;
+}
+
+.banner-carros {
+    display: flex;
+    justify-content: center; 
+}
+.banner-carros img{
+    width: 45vw;
+    margin: 0px 10px;
+    box-shadow: 1px 1px 5px black;
+    border-radius: 5px;
+}
+#quem-somos{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#quem-somos h1 {
+    color: #FF5C5C;
+    font-size: 5vw;
+    text-shadow: 10px 8px 20px grey;
+    margin: 10px;
+}
+#quem-somos h2{
+    margin: 5px 0px;
+}
+#quem-somos h3{
+    margin: 5px 0px;
+}
+.titulo-prod {
+    padding: 10px;
+    font-size: 2vw;
+    margin-bottom: 5px;
+}
+#produtos {
+    display: grid;
+    grid-template-columns: 25vw 25vw 25vw 25vw;
+    row-gap: 15px;
+    justify-items: center;
+} 
+#produtos img {
+    width: 20vw;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px black;
+}
+.fotos-time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+}
+.fotos-time div {
+    display: flex;
+    flex-direction: column ;
+}
+#nosso-time {
+    background-color: #FF5C5C;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px grey;
+    color: white;
+    font-size: 1.5vw;
+}
+#nosso-time h3 {
+    padding: 10px;
+}
+#nosso-time img{
+    width: 15vw;
+    border-radius: 200px;
+    box-shadow: 1px 1px 5px black;
+}
+.marquinha {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    opacity: 40%;
+    font-size: 1vw;
+}
+.marquinha img{
+    width: 2vw;
+    margin: 0px 5px;
+}
+footer{
+    background-color:#FF5C5C;
+    color: white;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+footer img {
+    width: 10vh
+}
+footer img:hover {
+    opacity: 80%;
+}

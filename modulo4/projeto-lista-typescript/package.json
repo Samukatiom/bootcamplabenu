@@ -1,0 +1,26 @@
+{
+  "name": "template-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "typeVariables": "tsc && node ./build/typeOfVariables.js",
+    "yearOfBirth": "tsc && node ./build/yearOfBirth.js",
+    "movieCatalogs": "tsc && node ./build/movieCatalogs.js",
+    "filterWorkers": "tsc && node ./build/filterWorkers.js",
+    "filterUser": "tsc && node ./build/filterUser.js",
+    "digitalBank": "tsc && node ./build/digitalBank.js",
+    "priceRefactor": "tsc && node ./build/priceRefactor.js",
+    "checkRenewal": "tsc && node ./build/checkRenewal.js",
+    "anagrams": "tsc && node ./build/anagrams.js"
+
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "typescript": "^4.7.4"
+  }
+}

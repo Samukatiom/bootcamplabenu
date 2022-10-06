@@ -1,0 +1,91 @@
+### Ping
+GET http://localhost:3003/ping
+
+### Signup
+POST http://localhost:3003/users/signup
+Content-Type: application/json
+
+{
+    "name": "Yuzo Santana",
+    "email": "yuzao@gmail.com",
+    "password": "123yuzo"
+}
+
+### login
+POST http://localhost:3003/users/login
+Content-Type: application/json
+
+{
+    "email": "saraujo@gmail.com",
+    "password": "bananinha"
+}
+
+
+### Change Role
+PUT http://localhost:3003/users/role/change/2
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE2NjI4MTI4NjYsImV4cCI6MTY2Mjg5OTI2Nn0.8uwXVtWNG2NwMKK7IPWIl_G_RhgsvM_a9Oi0LPaUR04
+Content-Type: application/json
+
+{
+    "role": "ADMIN"
+}
+
+### Delete user
+DELETE  http://localhost:3003/users/2
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE2NjI4MTI4NjYsImV4cCI6MTY2Mjg5OTI2Nn0.8uwXVtWNG2NwMKK7IPWIl_G_RhgsvM_a9Oi0LPaUR04
+
+### Get All Products
+GET http://localhost:3003/products?sort=id&order=desc
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE2NjI4MTI4NjYsImV4cCI6MTY2Mjg5OTI2Nn0.8uwXVtWNG2NwMKK7IPWIl_G_RhgsvM_a9Oi0LPaUR04
+
+### Get Products by Id
+GET http://localhost:3003/products/search?q=6a36397f-fc48-42be-a32b-7e576bbcdeae
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE2NjI4MTI4NjYsImV4cCI6MTY2Mjg5OTI2Nn0.8uwXVtWNG2NwMKK7IPWIl_G_RhgsvM_a9Oi0LPaUR04
+
+### Get Products by name
+GET http://localhost:3003/products/search?q=camisrta
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE2NjI4MTI4NjYsImV4cCI6MTY2Mjg5OTI2Nn0.8uwXVtWNG2NwMKK7IPWIl_G_RhgsvM_a9Oi0LPaUR04
+
+### Get Products by tag
+GET http://localhost:3003/products/search/tag?q=103
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE2NjI4MTI4NjYsImV4cCI6MTY2Mjg5OTI2Nn0.8uwXVtWNG2NwMKK7IPWIl_G_RhgsvM_a9Oi0LPaUR04
+
+### Get Tags
+GET http://localhost:3003/products/tags
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE2NjI4MTI4NjYsImV4cCI6MTY2Mjg5OTI2Nn0.8uwXVtWNG2NwMKK7IPWIl_G_RhgsvM_a9Oi0LPaUR04
+
+### Create Product
+POST http://localhost:3003/products
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE2NjI4MTI4NjYsImV4cCI6MTY2Mjg5OTI2Nn0.8uwXVtWNG2NwMKK7IPWIl_G_RhgsvM_a9Oi0LPaUR04
+Content-Type: application/json
+
+{
+    "name": "Calça jens 1221",
+    "tagsId": []
+}
+
+### Create Tags
+POST http://localhost:3003/products/tags
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE2NjI4MTI4NjYsImV4cCI6MTY2Mjg5OTI2Nn0.8uwXVtWNG2NwMKK7IPWIl_G_RhgsvM_a9Oi0LPaUR04
+Content-Type: application/json
+
+{
+    "tags": ["OIIIEeesafafaf", "TESTE13333"]
+}
+
+### Edit Product
+PUT http://localhost:3003/products/8371
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE2NjI4MTI4NjYsImV4cCI6MTY2Mjg5OTI2Nn0.8uwXVtWNG2NwMKK7IPWIl_G_RhgsvM_a9Oi0LPaUR04
+Content-Type: application/json
+
+{
+    "name": "CAMISETA NIKE SB, BRANCA COM ESTAMPA AMARELA"
+}
+
+### Delete Product
+DELETE http://localhost:3003/products/638c89d2-ac53-4b80-9a1e-cbb4bb226f06
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE2NjI4MTI4NjYsImV4cCI6MTY2Mjg5OTI2Nn0.8uwXVtWNG2NwMKK7IPWIl_G_RhgsvM_a9Oi0LPaUR04
+
+### Delete Relation
+DELETE http://localhost:3003/products/relations/101/509caedb-c556-4584-a84d-02ef8fe42674
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE2NjI4MTI4NjYsImV4cCI6MTY2Mjg5OTI2Nn0.8uwXVtWNG2NwMKK7IPWIl_G_RhgsvM_a9Oi0LPaUR04
